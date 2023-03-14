@@ -1,0 +1,11 @@
+runtime: python38
+
+entrypoint: gunicorn -b :$PORT main:app
+
+env_variables:
+  OPENAI_API_KEY: "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"
+  OPENAI_MODEL_ENGINE: "text-davinci-003"
+
+instance_class: F2
+
+service: sacralapi3
